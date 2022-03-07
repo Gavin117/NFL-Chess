@@ -8,8 +8,8 @@ def get_data(file):
     data = [row for row in reader]
     return data
 
-def get_start():
-    data = get_data('wl.csv')
+def get_start(file):
+    data = get_data(file)
     team1 = [row[4] for row in data]
     team2 = [row[6] for row in data]
     teams = team1+team2
@@ -54,10 +54,11 @@ def process_schedule(file):
     return x
 
 
+filename = 'win_loss_.csv'
 
-ratings = get_start()
+ratings = get_start(filename)
 
-games_list = process_schedule('wl.csv')
+games_list = process_schedule(filename)
 
 for game in games_list:
     #print(game)
