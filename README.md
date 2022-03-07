@@ -10,4 +10,4 @@ as the season progresses the ranks change giving us a representation of the curr
 
 From this we can make prediction about the results of future games.
 
-To update for current or next season edit wl.csv file.
+To update for current or next season edit win_loss.csv file.
